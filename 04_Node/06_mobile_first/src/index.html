@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header__bar">
+        <a href="#" class="logo">DAN.IT</a>
+        <nav class="nav">
+          <button class="nav__toggle">Menu</button>
+          <ul class="nav__list">
+            <li><a href="">Home</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Get Started</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <h1>Build skills. Level up fast</h1>
+            <p class="lead">
+              Desktop-first layout that gracefully adapts down. Resize the
+              window to see columns stack, gaps tighten, and type scale.
+            </p>
+
+            <div class="hero_actions">
+              <a href="#cta" class="btn btn--primary">Start now</a>
+              <a href="#features" class="btn btn-ghost">Learn more</a>
+            </div>
+          </div>
+          <div class="hero__visual">
+            <div class="card card--lg"></div>
+            <div class="card card--sm"></div>
+            <div class="card card--sm"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container features__grid">
+          <article class="feature">
+            <div class="feature__icon">🚀</div>
+            <h3>Fast track</h3>
+            <p>
+              Desktop grid → tablet wrap → single-column on phones. No drama.
+            </p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">🧠</div>
+            <h3>Smart content</h3>
+            <p>
+              Type scales down and paddings tighten to keep readability on
+              point.
+            </p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">🛠️</div>
+            <h3>Gulp-ready</h3>
+            <p>
+              Just compile <code>styles.scss</code> to
+              <code>styles.css</code> in your build.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta" id="cta">
+        <div class="container cta__box">
+          <h2>Ready when u are ready</h2>
+          <p>
+            Buttons grow/shrink, layout flips to vertical under smaller widths.
+          </p>
+          <form action="#" class="cta__form">
+            <input type="email" class="input" />
+            <button class="btn btn-primary">Join</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          © <span id="year"></span> DAN.IT Education
+        </div>
+        <ul class="footer__links">
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Help</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

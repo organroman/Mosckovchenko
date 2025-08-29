@@ -1,0 +1,153 @@
+@use "./reset" as *;
+@use "./variables" as *;
+@use "./header" as *;
+@use "./cta" as *;
+@use "./hero" as *;
+@use "./features" as *;
+@use "./footer" as *;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: $white;
+    background: linear-gradient(180deg, $bg 0%, #0b0c10 100%);
+    line-height: 1.6;
+    font-size: var(--fs-400);
+}
+
+.container {
+    width: min(1200px, 92vw);
+    margin: 0 auto
+}
+
+.btn {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid transparent;
+    padding: 14px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+    border-radius: 999px;
+
+    &:active {
+        transform: translateY(1px);
+    }
+
+    &--primary {
+        background: linear-gradient(125deg, $brand, $brand-2);
+        color: $white
+    }
+
+    &--ghost {
+        background: transparent;
+        border-color: rgba($white, 0.2);
+        color: $white;
+    }
+}
+
+.input {
+    background: $card;
+    border: 1px solid rgba($white, 0.08);
+    color: $white;
+    padding: 14px 16px;
+    border-radius: 12px;
+    outline: none;
+    width: 100%;
+}
+
+@media (max-width: $bp-lg) {
+    :root {
+        --fs-800: 34px;
+        --fs-700: 24px;
+        --fs-600: 20px;
+    }
+
+    .hero__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .features__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: $bp-md) {
+    .header__bar {
+        // grid-template-columns: 1fr auto;
+    }
+
+    .nav__toggle {
+        display: inline-flex;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .hero {
+        padding: 3.5rem 0 2rem;
+
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+
+        &__visual {
+            order: -1;
+        }
+
+    }
+
+    .features__grid,
+    .cta__form,
+    .footer__grid {
+        grid-template-columns: 1fr;
+
+
+    }
+
+    .footer__grid {
+        justify-items: center;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: $bp-sm) {
+    :root {
+        --fs-500: 16px;
+        --fs-600: 18px;
+        --fs-700: 22px;
+        --fs-800: 28px;
+    }
+
+
+    .container {
+        width: min(1000px, 94vw);
+    }
+
+    .btn {
+        padding: 0.8rem, 1rem;
+    }
+
+    .hero__visual {
+        grid-auto-rows: 110px;
+
+        .card--lg {
+            min-height: 180px;
+        }
+    }
+
+    .cta-box {
+        padding: 1.25rem;
+    }
+}

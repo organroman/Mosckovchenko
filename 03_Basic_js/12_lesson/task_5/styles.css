@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  max-width: 300px;
+  background: #f9f9f9;
+}
+
+.labels {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: white;
+}
+
+.label-new {
+  background: #3b82f6;
+}
+
+.label-sale {
+  background: #f97316;
+}
+
+.price {
+  font-size: 1.1rem;
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 6px;
+}
+
+.price-new {
+  color: #10b981;
+  font-weight: bold;
+}

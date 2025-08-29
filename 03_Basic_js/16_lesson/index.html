@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 2rem;
+        background: #f7f7f7;
+      }
+      section {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        margin-top: 0;
+      }
+      button {
+        margin: 0.5rem 0;
+        padding: 0.5rem 1rem;
+      }
+      code {
+        background: #eee;
+        padding: 0.2rem 0.4rem;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Set Timeout</h2>
+      <button id="start-timeout">Start timeout</button>
+
+      <p id="timeout-result"></p>
+    </section>
+
+    <section>
+      <h2>Set Interval</h2>
+      <button id="start-setInterval">Start setInterval</button>
+      <button id="stop-setInterval">STOP setInterval</button>
+      <p id="interval-result"></p>
+    </section>
+    ˝
+
+    <section>
+      <h2>Local Storage</h2>
+      <input id="localInput" placeholder="Enter username" />
+      <button id="saveLocal">save</button>
+      <button id="loadLocal">load</button>
+      <button id="clearLocal">clear</button>
+      <p id="local-result"></p>
+    </section>
+
+    <section>
+      <h2>Session Storage</h2>
+      <input id="sessionInput" placeholder="Enter data" />
+      <button id="saveSession">save</button>
+      <button id="loadSession">load</button>
+      <button id="clearSession">clear</button>
+      <p id="session-result"></p>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

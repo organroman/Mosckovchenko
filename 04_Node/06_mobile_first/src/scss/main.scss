@@ -1,0 +1,130 @@
+@use "./reset" as *;
+@use "./variables" as *;
+@use "./header" as *;
+@use "./cta" as *;
+@use "./hero" as *;
+@use "./features" as *;
+@use "./footer" as *;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: $white;
+    background: linear-gradient(180deg, $bg 0%, #0b0c10 100%);
+    line-height: 1.6;
+    font-size: var(--fs-400);
+}
+
+.container {
+    width: min(1000px, 94vw);
+    margin: 0 auto
+}
+
+.btn {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid transparent;
+    padding: 14px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+    border-radius: 999px;
+
+    &:active {
+        transform: translateY(1px);
+    }
+
+    &--primary {
+        background: linear-gradient(125deg, $brand, $brand-2);
+        color: $white
+    }
+
+    &--ghost {
+        background: transparent;
+        border-color: rgba($white, 0.2);
+        color: $white;
+    }
+}
+
+.input {
+    background: $card;
+    border: 1px solid rgba($white, 0.08);
+    color: $white;
+    padding: 14px 16px;
+    border-radius: 12px;
+    outline: none;
+    width: 100%;
+}
+
+@media (min-width: $bp-sm) {
+    :root {
+        --fs-500: 18px;
+        --fs-600: 20px;
+        --fs-700: 24px;
+        --fs-800: 34px;
+    }
+
+    .hero {
+        padding: 5rem 0 3rem;
+
+        &__grid {
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 3rem
+        }
+
+        &__visual {
+            order: unset;
+            grid-auto-rows: 140px;
+
+            .card--lg {
+                min-height: 220px;
+            }
+
+            .card--sm {
+                min-height: 140px;
+            }
+        }
+    }
+
+    .features__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .cta__form {
+        grid-template-columns: 1fr auto;
+    }
+
+    .cta__box {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: $bp-lg) {
+    :root {
+        --fs-600: 22px;
+        --fs-700: 28px;
+        --fs-800: 40px;
+    }
+
+    .container {
+        width: min(1200px, 92vw);
+    }
+
+    .features__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: $bp-xl) {
+    .hero__grid {
+        grid-template-columns: 1.2fr 0.8fr;
+    }
+}

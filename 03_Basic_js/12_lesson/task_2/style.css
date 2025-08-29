@@ -1,0 +1,15 @@
+.alert-danger {
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: pink;
+    color: red;
+    font-weight: 700;
+}
+
+.alert-success {
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: lightgreen;
+    color: green;
+    font-weight: 700;
+}

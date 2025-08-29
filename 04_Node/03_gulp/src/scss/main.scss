@@ -1,0 +1,11 @@
+@use "./variables" as *;
+@use "./header" as *;
+@use "./hero" as *;
+@use "./about" as *;
+@use "./footer" as *;
+
+body {
+    font-family: $font-stack;
+    color: $text-color;
+    margin: 0;
+}

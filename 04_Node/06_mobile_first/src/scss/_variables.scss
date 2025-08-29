@@ -1,0 +1,22 @@
+$bp-xl: 1200px; // wide desktop
+$bp-lg: 992px; // laptop
+$bp-md: 768px; // tablet
+$bp-sm: 576px; // large phone
+
+$bg: #0e0f13;
+$panel: #171923;
+$card: #1f2332;
+$muted: #8e97a7;
+$brand: #6c8cff;
+$brand-2: #8f74ff;
+$white: #fff;
+
+:root {
+    // base desktop type scale
+    --fs-300: 14px;
+    --fs-400: 16px;
+    --fs-500: 18px;
+    --fs-600: 22px;
+    --fs-700: 28px;
+    --fs-800: 40px;
+}

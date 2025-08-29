@@ -1,0 +1,33 @@
+@use "./variables" as *;
+
+.cta {
+    padding: 3rem 0 5rem;
+
+    &__box {
+        background: linear-gradient(135deg, rgba($brand, .25), rgba($brand-2, .18));
+        border: 1px solid rgba($white, .08);
+        border-radius: 1.2rem;
+        padding: 2rem clamp(1rem, 2vw, 2.5rem);
+        text-align: center;
+
+        h2 {
+            font-size: var(--fs-700);
+            margin: 0 0 .5rem;
+        }
+
+        p {
+            color: $muted;
+            margin: 0 0 1.25rem;
+        }
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: 1fr auto; // desktop side-by-side
+        gap: .75rem;
+
+        .btn {
+            padding-inline: 1.4rem;
+        }
+    }
+}
